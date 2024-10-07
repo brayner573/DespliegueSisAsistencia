@@ -10,7 +10,7 @@ pipeline {
         stage('Clone') {
             steps {
                 timeout(time: 2, unit: 'MINUTES'){
-                     git branch: 'main', credentialsId: 'github_pat_token', url: 'https://github.com/brayner573/DespliegueSisAsistencia.git'
+                     git branch: 'main', credentialsId: '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', url: 'https://github.com/brayner573/DespliegueSisAsistencia.git'
                 }
             }
         }
