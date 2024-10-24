@@ -10,7 +10,7 @@ pipeline {
         stage('Clone') {
             steps {
                 timeout(time: 2, unit: 'MINUTES'){
-                    git branch: 'main', credentialsId: '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', url: 'https://github.com/brayner573/ExamenDespliegue.git'
+                    git branch: 'main', credentialsId: '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', url: 'https://github.com/brayner573/ExamenDespliegue.git'
                 }
             }
         }
