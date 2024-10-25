@@ -39,7 +39,7 @@ public class OfertaLaboralServiceTest {
 
     @Test
     public void testGetOfertaById() {
-        // Simulamos que el repositorio devuelve una oferta laboral
+       
         given(ofertaLaboralRepository.findById(1L)).willReturn(Optional.of(ofertaLaboral));
 
         OfertaLaboral result = ofertaLaboralService.findById(1L);
@@ -51,7 +51,7 @@ public class OfertaLaboralServiceTest {
 
     @Test
     public void testCreateOferta() {
-       
+
         given(ofertaLaboralRepository.save(Mockito.any(OfertaLaboral.class))).willReturn(ofertaLaboral);
 
         OfertaLaboral result = ofertaLaboralService.save(ofertaLaboral);
