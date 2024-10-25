@@ -48,9 +48,10 @@ public class OfertaLaboralServiceTest {
         assertEquals(1L, result.getId());
         assertEquals("Desarrollador Java", result.getTitulo());
     }
-  
+
     @Test
     public void testCreateOferta() {
+        // Simulamos que el repositorio devuelve una oferta laboral
         given(ofertaLaboralRepository.save(Mockito.any(OfertaLaboral.class))).willReturn(ofertaLaboral);
 
         OfertaLaboral result = ofertaLaboralService.save(ofertaLaboral);
