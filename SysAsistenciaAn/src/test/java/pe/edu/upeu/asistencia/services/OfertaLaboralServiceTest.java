@@ -56,6 +56,6 @@ public class OfertaLaboralServiceTest {
         OfertaLaboral result = ofertaLaboralService.save(ofertaLaboral);
 
         assertNotNull(result);
-        assertEquals("Desarrollador", result.getTitulo());
+        assertEquals("Desarrollador Java", result.getTitulo());
     }
 }
